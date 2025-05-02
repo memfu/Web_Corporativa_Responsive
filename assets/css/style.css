@@ -49,6 +49,25 @@ input[type=submit], input[type=reset] {
     padding-inline: 3rem;
 }
 
+/*Localizacion*/
+#localizacion {
+    display: block;
+    background-color: whitesmoke;
+}
+
+.sello {
+    width: 20vw;
+    height: 20vw;
+}
+
+#leipzig {
+    display: inline;
+}
+
+#madrid {
+    display: inline;
+}
+
 /*Tipografías*/
 @font-face {
     font-family: "Open Sans";
