@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Insertamos el archivo CSS externo-->
+     <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    Para contactar con nosotras rellena el siguiente formulario:
+    <form action="mailto:desarrolladoras@fakemail.com" method="post" name="contacto">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div class="grupoCampos">
+                <label for="nombre">Nombre(*):</label>
+                <input type="text" id="nombre" name="nombre" class="inputLargo" required>
+                <label for="apellidos">Apellidos(*):</label>
+                <input type="text" id="apellidos" name="apellidos" class="inputLargo" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <div class="grupoCampos">
+                <label for="Telefono">Telefono(*):</label>
+                <!--Ponemos el input de Telefono de tipo text para en caso de que sea
+                un nr. internacional (empezando por + o por 0) que no haya problemas-->
+                <input type="text" id="telefono" name="telefono" class="inputLargo" required>
+                <label for="email" id="campoCorreo">Correo electrónico(*):</label>
+                <input type="email" id="email" name="email" class="inputLargo" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Mensaje</legend>
+            <textarea name="mensaje" id="mensaje">Escribe tu mensaje aquí</textarea>
+        </fieldset>
+        <input type="submit" value="Enviar"><input type="reset" value="Borrar">
+    </form>
+    
+</body>
+</html>

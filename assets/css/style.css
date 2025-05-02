@@ -1,0 +1,58 @@
+:root {
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+
+/*Formulario*/
+form{
+    background-color: #FFE8D1;
+    width: 60vw;
+    height: fit-content;
+    padding: 2rem;
+}
+
+fieldset {margin-bottom: 1rem;}
+
+.grupoCampos {display: block;}
+
+.grupoCampos label {
+    display: inline-block;
+    width: 4rem;
+    margin: 0.7rem 0;
+    margin-right: 10px;
+}
+
+.grupoCampos input {margin-left: 0.5rem;}
+
+#campoCorreo {width: 10rem;}
+
+textarea {
+    display: block;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+.inputCorto {width: 3rem;}
+
+.inputLargo {width: 12rem;}
+
+input[type=submit], input[type=reset] {
+    display: inline-block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    padding-inline: 3rem;
+}
+
+/*Tipografías*/
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
+    font-family: "Lora";
+    src: url("../fonts/Lora/static/Lora-Regular.ttf") format("truetype");
+}
